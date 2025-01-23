@@ -1,4 +1,4 @@
-# Adivina el Número - Aplicación Flutter
+# Adivina el Número - Mi primera aplicacion movil
 
 Bienvenido al repositorio de la aplicación móvil "Adivina el Número". Esta es una aplicación interactiva construida con Flutter, en la que los usuarios intentan adivinar un número aleatorio generado entre 0 y 100. La aplicación les dará pistas para adivinar el número hasta que lo consigan.
 
@@ -64,5 +64,5 @@ Puedes ver cómo funciona la aplicación a continuación:
 [Video de demostración](https://drive.google.com/file/d/1KIrcXbQW5bpk2aZXpL3waSyHO07KBv35/view?usp=sharing)
 
 <p align="center">
-  <img src="../juegoadivina_app/assets/images/imagen1.jpeg" alt="Texto alternativo de la imagen" width="300"/>
+  <img src="assets/images/imagen1.jpeg" alt="Texto alternativo de la imagen" width="300"/>
 </p>
