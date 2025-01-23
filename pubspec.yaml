@@ -4,11 +4,13 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: ^3.6.1
+  sdk: ^3.6.0
 
 dependencies:
   flutter:
     sdk: flutter
+  awesome_dialog: 3.2.1
+  lottie: 3.3.1
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +19,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/title_animation.json
