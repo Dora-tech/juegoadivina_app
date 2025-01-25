@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 import '../widgets/slider_adivinar.dart';
 
-class PantallaJuego extends StatefulWidget {
+// Por buenas practicas el nobmre de widget debe coincidir con el nombre del archivo
+class JuegoScreen extends StatefulWidget {
   final int numeroSecreto;
 
-  const PantallaJuego({required this.numeroSecreto, super.key});
+  const JuegoScreen({required this.numeroSecreto, super.key});
 
   @override
-  _PantallaJuegoState createState() => _PantallaJuegoState();
+  _JuegoScreenState createState() => _JuegoScreenState();
 }
 
-class _PantallaJuegoState extends State<PantallaJuego> {
-  double _valorSeleccionado = 50;
-  String _mensaje = '';
+class _JuegoScreenState extends State<JuegoScreen> {
+  // Usar var en lugar de double
+  var _valorSeleccionado = 50.0;
+  // Usar var en lugar de String
+  var _mensaje = '';
 
   void _verificarNumero() {
     setState(() {
@@ -35,8 +38,11 @@ class _PantallaJuegoState extends State<PantallaJuego> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Adivina cuál es', style: TextStyle(fontSize: 18, color: Colors.white)),
+            const Text('Adivina cuál es',
+                style: TextStyle(fontSize: 18, color: Colors.white)),
             SliderAdivinar(
+              min: 0,
+              max: 100,
               valor: _valorSeleccionado,
               onChanged: (nuevoValor) {
                 setState(() {
@@ -57,7 +63,10 @@ class _PantallaJuegoState extends State<PantallaJuego> {
                 padding: const EdgeInsets.all(20.0),
                 child: Text(
                   _mensaje,
-                  style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.red),
+                  style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red),
                   textAlign: TextAlign.center,
                 ),
               ),
