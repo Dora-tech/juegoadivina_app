@@ -11,13 +11,13 @@ class AdivinaNumeroApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Adivina el Número',  // Agregando título para la app
+      title: 'Adivina el Número', // Agregando título para la app
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.purple,
-        fontFamily: 'Roboto',  // Usa una fuente personalizada
+        fontFamily: 'Roboto', // Usa una fuente personalizada
       ),
-      home: const PantallaBienvenida(),
+      home: const BienvenidaScreen(),
     );
   }
 }
